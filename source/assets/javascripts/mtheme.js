@@ -34,8 +34,11 @@ mtheme.init();
 
 $('.carousel').slick({
   adaptiveHeight: true,
+  autoplay:       true,
+  autoplaySpeed:  3000,
   dots:           true,
   infinite:       true,
   slidesToShow:   1,
   slidesToScroll: 1,
+  speed:          300,
 });
