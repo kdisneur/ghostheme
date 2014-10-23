@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+
+    <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Open+Sans:300,400,600,700,900">
+    <link rel="stylesheet" href="//brick.a.ssl.fastly.net/EB+Garamond:400">
+
+    <link title="newtheme" rel="stylesheet" href="{{asset "stylesheets/mtheme.css"}}">
+
+    {{ghost_head}}
+  </head>
+  <body class="{{body_class}}">
+    {{> site_nav}}
+
+    {{{body}}}
+
+    {{ghost_foot}}
+  </body>
+  <script type="text/javascript" src="{{asset "javascripts/mtheme.js"}}"></script>
+</html>

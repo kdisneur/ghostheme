@@ -1,0 +1,27 @@
+{
+  "name": "ghosttheme",
+  "version": "0.0.1",
+  "homepage": "https://github.com/kdisneur/ghosttheme",
+  "authors": [
+    "Kevin <kevin@disneur.me>"
+  ],
+  "description": "Theme for Ghost blogging platform based on mtheme and photoghost",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass-official": "3.2.0",
+    "jquery":                  "2.1.1",
+    "jquery-migrate":          "1.2.1",
+    "lodash":                  "2.4.1",
+    "modernizr":               "2.8.3",
+    "ScrollMagic":             "1.2.2",
+    "slick.js":                "1.3.11"
+  }
+}

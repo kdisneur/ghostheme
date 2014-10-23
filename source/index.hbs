@@ -1,0 +1,32 @@
+{{!< photoghost_layout }}
+
+<header class="site-head">
+  <div class="site-head-content">
+    <div class="vertical">
+      <h1 class="blog-title">{{@blog.title}}</h1>
+    </div>
+  </div>
+</header>
+
+<main class="content" role="main">
+  {{#foreach posts}}
+    <article class="mainpage {{post_class}}">
+      <div class="post-inner">
+        <header class="post-header">
+          <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+          <div class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM DD, YYYY"}}</time></div>
+        </header>
+
+        <section class="content-temp">
+          {{content words="0"}}
+        </section>
+
+        <section class="post-excerpt">
+          <p>{{excerpt}}&hellip;</p>
+        </section>
+      </div>
+    </article>
+  {{/foreach}}
+
+  {{pagination}}
+</main>
